@@ -11,9 +11,8 @@ public class AudioManager : MonoBehaviour
 
         [Header("---------- Audio clip ----------")]
         public AudioClip mainMenuMusic;
-        public AudioClip levelMusic;
         public AudioClip explosion;
-        public AudioClip laserGun;
+        public AudioClip levelBuble;
         public AudioClip powerUp;
         public AudioClip tapButton;
 
