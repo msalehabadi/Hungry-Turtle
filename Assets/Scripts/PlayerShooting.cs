@@ -63,7 +63,7 @@ public class PlayerShooting : MonoBehaviour
     }
     void Update()
     {
-        shootingInterval -= Time.deltaTime;
+        shootingInterval -= Time.deltaTime; //intervall
         if (shootingInterval <= 0)
         {
             Shoot();
