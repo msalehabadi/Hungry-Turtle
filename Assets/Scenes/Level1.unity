@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 2138365607}
-  remainingTime: 30
+  remainingTime: 16
 --- !u!1 &68396307
 GameObject:
   m_ObjectHideFlags: 0
@@ -3053,7 +3053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1440013023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6853,7 +6853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8841862323473839771, guid: d9ac5d65c7e1768479c246424f9fc44f, type: 3}
       propertyPath: possibleWinTime
-      value: 25
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8841862323473839771, guid: d9ac5d65c7e1768479c246424f9fc44f, type: 3}
       propertyPath: spawner.Array.size
