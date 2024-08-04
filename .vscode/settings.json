@@ -56,5 +56,9 @@
         "temp/": true,
         "Temp/": true
     },
+<<<<<<< HEAD
     "dotnet.defaultSolution": "Hungry Turtle.sln"
+=======
+    "dotnet.defaultSolution": "Space Shooter Mobile.sln"
+>>>>>>> origin/main
 }

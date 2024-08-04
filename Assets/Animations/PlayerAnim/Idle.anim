@@ -18,17 +18,26 @@ AnimationClip:
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves:
+<<<<<<< HEAD
   - serializedVersion: 2
     curve:
     - time: 0
       value: {fileID: 21300000, guid: e3e7c1199f464b641a597084c3bf9353, type: 3}
     - time: 1
       value: {fileID: 21300000, guid: e3e7c1199f464b641a597084c3bf9353, type: 3}
+=======
+  - curve:
+    - time: 1
+      value: {fileID: 21300000, guid: 08a9927a239485948b6474c9f3f7863c, type: 3}
+>>>>>>> origin/main
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
+<<<<<<< HEAD
     flags: 2
+=======
+>>>>>>> origin/main
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -44,10 +53,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
       isIntCurve: 0
+<<<<<<< HEAD
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - {fileID: 21300000, guid: e3e7c1199f464b641a597084c3bf9353, type: 3}
     - {fileID: 21300000, guid: e3e7c1199f464b641a597084c3bf9353, type: 3}
+=======
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: 08a9927a239485948b6474c9f3f7863c, type: 3}
+>>>>>>> origin/main
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

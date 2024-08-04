@@ -10,9 +10,17 @@ public class PlayerControls : MonoBehaviour
     private Camera mainCam;
     private Vector3 offset;
 
+<<<<<<< HEAD
     private float maxLeft;
     private float maxRight;
 
+=======
+
+    private float maxLeft;
+    private float maxRight;
+    private float maxDown;
+    private float maxUp;
+>>>>>>> origin/main
     void Start()
     {
         mainCam = Camera.main;
@@ -34,11 +42,23 @@ public class PlayerControls : MonoBehaviour
                  {
                      offset = touchPos - transform.position;
                  }
+<<<<<<< HEAD
                  if (Touch.activeTouches[0].phase == TouchPhase.Moved || Touch.activeTouches[0].phase == TouchPhase.Stationary)
                  {
                      transform.position = new Vector3(touchPos.x - offset.x, transform.position.y, 0);
                  }
                  transform.position = new Vector3(Mathf.Clamp(transform.position.x, maxLeft, maxRight), transform.position.y, 0);
+=======
+                 if (Touch.activeTouches[0].phase == TouchPhase.Moved)
+                 {
+                     transform.position = new Vector3(touchPos.x-offset.x, touchPos.y-offset.y, 0);
+                 }
+                 if (Touch.activeTouches[0].phase == TouchPhase.Stationary)
+                 {
+                     transform.position = new Vector3(touchPos.x - offset.x, touchPos.y - offset.y, 0);
+                 }
+                 transform.position=new Vector3(Mathf.Clamp(transform.position.x, maxLeft, maxRight), Mathf.Clamp(transform.position.y, maxDown, maxUp), 0);
+>>>>>>> origin/main
              }
         }
     }
@@ -59,5 +79,11 @@ public class PlayerControls : MonoBehaviour
 
         maxLeft = mainCam.ViewportToWorldPoint(new Vector2(0.15f, 0)).x;
         maxRight = mainCam.ViewportToWorldPoint(new Vector2(0.85f, 0)).x;
+<<<<<<< HEAD
+=======
+
+        maxDown = mainCam.ViewportToWorldPoint(new Vector2(0, 0.08f)).y;
+        maxUp = mainCam.ViewportToWorldPoint(new Vector2(0, 0.6f)).y;
+>>>>>>> origin/main
     }
 }

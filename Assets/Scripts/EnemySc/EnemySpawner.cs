@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
     private Camera mainCam;
     private float maxLeft;
     private float maxRight;
@@ -18,7 +22,10 @@ public class EnemySpawner : MonoBehaviour
     [Header("Boss")]
     [SerializeField] private GameObject bossPrefab;
     [SerializeField] private WinCondition winCon;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
     void Start()
     {
         mainCam = Camera.main;
@@ -34,17 +41,26 @@ public class EnemySpawner : MonoBehaviour
     private void EnemySpawn()
     {
         enemyTimer += Time.deltaTime;
+<<<<<<< HEAD
         Debug.Log("Enemy Timer: " + enemyTimer);  // Debug log to check the timer value
 
         if (enemyTimer >= enemySpawnTime)
         {
             int randomPick = Random.Range(0, enemy.Length);
             Debug.Log("Spawning enemy: " + randomPick);  // Debug log to check which enemy is being spawned
+=======
+        if (enemyTimer >= enemySpawnTime)
+        {
+            int randomPick = Random.Range(0, enemy.Length);
+>>>>>>> origin/main
             Instantiate(enemy[randomPick], new Vector3(Random.Range(maxLeft, maxRight), yPos, 0), Quaternion.identity);
             enemyTimer = 0;
         }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
     private IEnumerator SetBoundaries()
     {
         yield return new WaitForSeconds(0.4f);
@@ -52,8 +68,11 @@ public class EnemySpawner : MonoBehaviour
         maxLeft = mainCam.ViewportToWorldPoint(new Vector2(0.15f, 0)).x;
         maxRight = mainCam.ViewportToWorldPoint(new Vector2(0.85f, 0)).x;
         yPos = mainCam.ViewportToWorldPoint(new Vector2(0, 1.1f)).y;
+<<<<<<< HEAD
         
         Debug.Log("Boundaries set: " + maxLeft + ", " + maxRight + ", " + yPos);  // Debug log to check boundary values
+=======
+>>>>>>> origin/main
     }
 
     private void OnDisable()
@@ -64,8 +83,12 @@ public class EnemySpawner : MonoBehaviour
         if (bossPrefab != null)
         {
             Vector2 spawnPos = mainCam.ViewportToWorldPoint(new Vector2(0.5f,1.2f));
+<<<<<<< HEAD
             Instantiate(bossPrefab, spawnPos, Quaternion.identity);
             Debug.Log("Boss spawned at: " + spawnPos);  // Debug log to check boss spawn position
+=======
+            Instantiate(bossPrefab,spawnPos, Quaternion.identity);
+>>>>>>> origin/main
         }
     }
 }
